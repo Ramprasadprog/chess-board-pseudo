@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <style>
+        /* Basic styling for the chessboard table */
+        table.chessboard {
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        table.chessboard td, table.chessboard th {
+            width: 50px; /* Adjust size as needed */
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 24px; /* Adjust size as needed */
+        }
+
+        /* Alternate cell colors for chessboard squares */
+        table.chessboard tr:nth-child(odd) td:nth-child(odd),
+        table.chessboard tr:nth-child(even) td:nth-child(even) {
+            background-color: #b58863; /* Dark square color */
+        }
+
+        table.chessboard tr:nth-child(odd) td:nth-child(even),
+        table.chessboard tr:nth-child(even) td:nth-child(odd) {
+            background-color: #f0d9b5; /* Light square color */
+        }
+
+        /* Color classes for the chessboard cells */
+        table.chessboard td.black {
+            background-color: #b58863;
+            color: white;
+        }
+
+        table.chessboard td.white {
+            background-color: #f0d9b5;
+        }
+
+        /* Styling for the column and row labels */
+        
+
+        
+
+        table.chessboard caption {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Hide the border of the main table */
+        table.chessboard td {
+            border: 1px solid #000;
+        }
+
+        /* Hide the border for the header and side labels */
+        table.chessboard th {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <table class="chessboard">
+        <caption>Chess-Board</caption>
+        <thead>
+            <tr>
+                <th></th> <!-- Empty corner cell -->
+                <th class="col-label">1</th>
+                <th class="col-label">2</th>
+                <th class="col-label">3</th>
+                <th class="col-label">4</th>
+                <th class="col-label">5</th>
+                <th class="col-label">6</th>
+                <th class="col-label">7</th>
+                <th class="col-label">8</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="row-label">8</th>
+                <td class="black">&#9820;</td>
+                <td class="white">&#9822;</td>
+                <td class="black">&#9821;</td>
+                <td class="white">&#9819;</td>
+                <td class="black">&#9818;</td>
+                <td class="white">&#9821;</td>
+                <td class="black">&#9822;</td>
+                <td class="white">&#9820;</td>
+            </tr>
+            <tr>
+                <th class="row-label">7</th>
+                <td class="white">&#9823;</td>
+                <td class="black">&#9823;</td>
+                <td class="white">&#9823;</td>
+                <td class="black">&#9823;</td>
+                <td class="white">&#9823;</td>
+                <td class="black">&#9823;</td>
+                <td class="white">&#9823;</td>
+                <td class="black">&#9823;</td>
+            </tr>
+            <!-- Empty rows -->
+            <tr>
+                <th class="row-label">6</th>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <th class="row-label">5</th>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+            </tr>
+            <tr>
+                <th class="row-label">4</th>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <th class="row-label">3</th>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+            </tr>
+            <tr>
+                <th class="row-label">2</th>
+                <td class="white">&#9823;</td>
+                <td class="black">&#9823;</td>
+                <td class="white">&#9823;</td>
+                <td class="black">&#9823;</td>
+                <td class="white">&#9823;</td>
+                <td class="black">&#9823;</td>
+                <td class="white">&#9823;</td>
+                <td class="black">&#9823;</td>
+            </tr>
+            <tr>
+                <th class="row-label">1</th>
+                <td class="white">&#9814;</td>
+                <td class="black">&#9816;</td>
+                <td class="white">&#9815;</td>
+                <td class="black">&#9813;</td>
+                <td class="white">&#9812;</td>
+                <td class="black">&#9815;</td>
+                <td class="white">&#9816;</td>
+                <td class="black">&#9814;</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
